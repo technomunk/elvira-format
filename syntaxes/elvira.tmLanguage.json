@@ -1,0 +1,52 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "elvira",
+	"patterns": [
+		{
+			"include": "#expression"
+		}
+	],
+	"repository": {
+		"expression": {
+			"patterns": [
+				{
+					"name": "meta.line",
+					"match": "([^\\t]*\\t?)([^\\t]*\\t?)([^\\t]*\\t?)([^\\t]*\\t?)([^\\t]*\\t?)([^\\t]*\\t?)([^\\t]*\\t?)([^\\t]*\\t?)([^\\t]*\\t?)([^\\t]*\\t?)",
+					"captures": {
+						"1": {
+							"name": "entity.name.type.col1"
+						},
+						"2": {
+							"name": "keyword.col2"
+						},
+						"3": {
+							"name": "entity.name.function.col3"
+						},
+						"4": {
+							"name": "comment.col4"
+						},
+						"5": {
+							"name": "string.col5"
+						},
+						"6": {
+							"name": "variable.parameter.col6"
+						},
+						"7": {
+							"name": "constant.numeric.col7"
+						},
+						"8": {
+							"name": "entity.name.type.col8"
+						},
+						"9": {
+							"name": "markup.bold.col9"
+						},
+						"10": {
+							"name": "invalid.col10"
+						}
+					}
+				}
+			]
+		}
+	},
+	"scopeName": "source.elvira"
+}
